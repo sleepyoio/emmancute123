@@ -1,0 +1,143 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f4f8; /* Light background */
+}
+
+.container {
+    text-align: center;
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    max-width: 500px; /* Limit the width of the container */
+}
+
+.main-title {
+    font-size: 2.5em;
+    color: #ff4757; /* Color for the title */
+    margin: 0;
+    animation: pulse 1.5s infinite;
+}
+
+.sub-title {
+    font-size: 1.5em;
+    color: #2f3542; /* Darker color for sub-title */
+    margin: 10px 0;
+}
+
+.message {
+    font-size: 1em;
+    color: #57606f; /* Gray color for message */
+    margin: 20px 0;
+}
+
+.loader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.dot {
+    width: 15px;
+    height: 15px;
+    margin: 0 5px;
+    border-radius: 50%;
+    background-color: #ff4757; /* Color for loading dots */
+    animation: bounce 0.6s infinite alternate;
+}
+
+.dot:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.dot:nth-child(3) {
+    animation-delay: 0.4s;
+}
+
+/* Animation Styles */
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes bounce {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-15px);
+    }
+}
+
+
+.navbar{
+    position: fixed;
+    width: 85%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    justify-content: center;
+    
+     
+    top: 0;
+    left: 0;
+    right: 0;
+   
+    z-index: 10;
+   
+}
+
+
+.navbar ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+   
+
+
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: rgb(112, 40, 27);
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 600;
+   
+
+
+}
+.navbar ul li::after {
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #a73305;
+    position: absolute;
+    left: 0%;
+    bottom: -10px;
+    transition: 0.5s;
+
+
+}
+.navbar ul li:hover::after {
+    width: 100%;
+
+
+}

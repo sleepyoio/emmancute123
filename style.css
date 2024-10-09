@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&family=Roboto:wght@300;400;500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.swiper {
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  margin-top: -100px;
+}
+.swiper-slide {
+  width: 250px;
+  height: 350px;
+  box-shadow: 0 15px 50px rgba(55, 54, 56, 0.959);
+  filter: blur(10px);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: self-start;
+
+}
+.swiper-slide-active {
+  filter: blur(5px);
+}
+.swiper-pagination-bullet,
+.swiper-pagination-bullet-active {
+  background: #6e0b0b;
+}
+
+
+.swiper-slide h2 {
+  color: #ffffff;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 1.3rem;
+  line-height: 1.4;
+  margin-bottom: 15px;
+  padding: 25px 45px 0 25px;
+}
+.swiper-slide p {
+  color: #ffffff;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  display: flex;
+  align-items: center;
+  padding: 0 25px 35px 25px;
+}
+.swiper-slide svg {
+  color: #ffffff;
+  width: 22px;
+  height: 22px;
+  margin-right: 7px;
+}
+.swiper-slide--one {
+  background: linear-gradient(to top, #0f2027, #203a4300, #2c536400),
+    url(https://i.pinimg.com/564x/b4/cc/a3/b4cca3c5932f106c49805891e1f4c821.jpg) no-repeat 50% 50% / cover;
+    filter: brightness(0.95) saturate(3) sepia(0.3);
+    
+}
+.swiper-slide--two {
+  background: linear-gradient(to top, #0f2027, #203a4300, #2c536400),
+    url(https://dynamic-media-cdn.tripadvisor.com/media/photo-o/23/46/1c/0e/l-horizon-resort-spa.jpg?w=700&h=-1&s=1) no-repeat 50% 50% / cover;
+    filter: brightness(0.95) saturate(3) sepia(0.3);
+}
+.swiper-slide--three {
+  background: linear-gradient(to top, #0f2027, #203a4300, #2c536400),
+   url(https://visitpalmsprings.s3.amazonaws.com/wp-content/uploads/2020/06/11192043/18753b1df1b6cace7a3a7ef90eef4778_full_size-750x570.jpg) no-repeat 50% 50% / cover;
+   filter: brightness(0.95) saturate(3) sepia(0.3);
+}
+.swiper-slide--four {
+  background: linear-gradient(to top, #0f2027, #203a4300, #2c536400),
+    url(https://cf.bstatic.com/xdata/images/hotel/max1024x768/49616845.jpg?k=db978713c623d00ea28977f2caa90c8dcbc475f1722a78546621ba90796016ad&o=&hp=1) no-repeat 50% 50% / cover;
+    filter: brightness(0.95) saturate(3) sepia(0.3);
+}
+.swiper-slide--five {
+  background: linear-gradient(to top, #0f2027, #203a4300, #2c536400),
+    url(https://www.unnamedproject.com/wp-content/uploads/Lhorizon141.jpg) no-repeat 50% 50% / cover;
+    filter: brightness(0.95) saturate(3) sepia(0.3);
+}
+.swiper-3d .swiper-slide-shadow-left,
+.swiper-3d .swiper-slide-shadow-right {
+  background-image: none;
+}
